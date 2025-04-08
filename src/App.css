@@ -1,0 +1,27 @@
+.app {
+  position: relative;
+  text-align: left; /* 文字置中 */
+  font-family: 'Times New Roman', serif; 
+  width: 300px; 
+  height: 100vh;
+  padding: 0; 
+  margin: auto;
+  color: rgb(111, 140, 218);
+  overflow: hidden; /* 禁止內部滾動 */
+}
+
+.app p {
+  font-size: 9px;
+  font-family: 'Times New Roman', serif;
+  margin: -18px 0 20px 5px;
+  color: rgb(111, 140, 218);
+}
+
+/* 新增分隔線 */
+.app p:nth-of-type(1)::after {
+  content: "";
+  border-bottom: 1.5px solid rgb(111, 140, 218);
+  display: block;
+  margin-top: 5px;
+}
+

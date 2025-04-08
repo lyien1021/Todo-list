@@ -1,0 +1,66 @@
+/* 整個滾動條容器 */
+.todo-list-container {
+  max-height: 50vh; /* 限制容器的最大高度 */
+  overflow-y: auto; 
+  border: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+/* 整個滾動條 */
+.todo-list-container::-webkit-scrollbar {
+  width: 12px; /* 滾動條的寬度 */
+}
+
+/* 滾動條的背景 */
+.todo-list-container::-webkit-scrollbar-track {
+  background: rgb(158, 186, 228); /* 滾動條背景顏色 */
+  border-radius: 6px;
+}
+
+/* 滾動條的滑塊 */
+.todo-list-container::-webkit-scrollbar-thumb {
+  background: rgb(191, 217, 238); /* 滾動條滑塊顏色 */
+  border-radius: 6px; /* 滾動條滑塊圓角 */
+}
+
+/* 滾動條滑塊懸停時的顏色 */
+.todo-list-container::-webkit-scrollbar-thumb:hover {
+  background: #6c75af; /* 滾動條滑塊懸停顏色 */
+}
+
+/* 代辦事項列表 */
+.todo-list {
+  list-style: none; /* 去除列表樣式 */
+  padding: 0; /* 內邊距 */
+  margin: 0; /* 外邊距 */
+  flex-grow: 1; /* 使列表填滿容器 */
+}
+
+/* 進度條容器 */
+.progress-container {
+  display: flex;
+}
+
+.progress-background{
+  width: 100%;
+  /* position: relative; */
+  background-color: aliceblue;
+  border-radius: 5px; /* 圓角 */
+  margin-bottom: 10px; /* 下邊距 */ 
+  height: 15px;
+}
+
+/* 進度條 */
+.progress-bar {
+  height: 15px; /* 進度條高度 */
+  background-color: rgb(138, 156, 238); /* 進度條顏色 */
+  border-radius: 5px; /* 圓角 */
+  transition: width 0.3s; /* 平滑過渡效果 */
+}
+
+/* 完成率文字 */
+.completion-rate {
+  margin-right: 10px; 
+  font-weight: bold; /* 字體加粗 */
+}

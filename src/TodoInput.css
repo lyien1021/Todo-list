@@ -1,0 +1,53 @@
+/* 輸入容器樣式 */
+.input-container {
+  position: fixed; /* 固定在底部 */
+  bottom: 0; 
+  width: 100%; 
+  padding: 10px 0; 
+}
+
+/* Todo 輸入表單樣式 */
+.todo-input {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+/* 輸入框樣式 */
+.todo-input input {
+  padding: 8px; 
+  width: 100%; 
+  max-width: 250px; 
+  margin-right: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  transition: border-color 0.3s; 
+}
+
+/* 輸入框聚焦樣式 */
+.todo-input input:focus {
+  border-color: rgb(44, 74, 119); 
+  outline: none; 
+}
+
+/* 按鈕樣式 */
+.todo-input button {
+  padding: 8px; 
+  color: white; 
+  cursor: pointer; 
+  background-color: rgb(111, 140, 218); 
+  border: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+/* 按鈕懸停樣式 */
+.todo-input button:hover {
+  background-color: rgb(158, 186, 228); /* 懸停變色 */
+}
+
+/* 禁用按鈕樣式 */
+.todo-input button:disabled {
+  background-color: #ccc; /* 禁用顏色 */
+  cursor: not-allowed; /* 禁用狀態的鼠標樣式 */
+}

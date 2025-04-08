@@ -1,0 +1,13 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e0eefa, #d5d4fd);
+  min-height: 100vh; /* 確保背景覆蓋整個視窗 */
+  background-size: cover; /* 確保背景覆蓋整個區域 */
+  overflow: hidden; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
